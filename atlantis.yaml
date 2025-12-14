@@ -13,8 +13,8 @@ projects:
     apply_requirements: []
     workflow: id
 
-  - name: vpc/tmcd_apnortheast2
-    dir: terraform/vpc/tmcd_apnortheast2
+  - name: vpc/eksd_apnortheast2
+    dir: terraform/vpc/eksd_apnortheast2
     workspace: default
     terraform_version: 1.7.0
     autoplan:
