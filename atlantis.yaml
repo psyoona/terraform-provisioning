@@ -1,8 +1,8 @@
 version: 3
 automerge: true
 projects:
-  - name: init/zerone-id
-    dir: terraform/init/zerone-id
+  - name: init/220526
+    dir: terraform/init/220526
     workspace: default
     terraform_version: 1.3.7
     autoplan:
@@ -327,12 +327,12 @@ workflows:
       steps:
         - init:
             extra_args: [
-              '-backend-config="role_arn=arn:aws:iam::066346343248:role/atlantis-zerone-id-admin"',
+              '-backend-config="role_arn=arn:aws:iam::981548929243:role/atlantis-220526-admin"',
               '-upgrade=false'
             ]
         - plan:
             extra_args: [
-              "-var 'assume_role_arn=arn:aws:iam::066346343248:role/atlantis-zerone-id-admin'"
+              "-var 'assume_role_arn=arn:aws:iam::981548929243:role/atlantis-220526-admin'"
             ]
     apply:
       steps:
